@@ -1,0 +1,257 @@
+---
+title: "Pitchers are being babies: An analysis of the home run surge"
+author: "Leocadie Haguma, Rosalia Hernandez, Jacob Rojas"
+date: "8/23/2018"
+bibliography: articles.bib
+output:
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "seahorse"
+---
+
+# History
+
+- Trends of decreasing home runs followed by increasing home runs
+
+![](Home_runs_since_1890s.png)
+
+
+# History cont..
+
+- More home runs brings in more fans 
+- More fans brings in more money to the MLB
+- Player philosophy as has changed many times in baseball. 
+- Babe Ruth introduced the populatiry of the upswing [^2]
+
+
+# Problem
+
+## There is an in increasing trend of home runs between the 2015 to 2017 season. We plan to explore why and how this trend occurred. 
+
+# Speculation
+
+- What some have said 
+![](Verlander.png)
+
+
+# Report of the Committee Studying Home Run Rates in Major League Baseball
+The Scientists[^1]
+
+- Jim Albert, Bowling Green State University  
+- Jay Bartroff, University of Southern California  
+- Roger Blandford, Stanford University    
+- Dan Brooks, Researcher & co-organizer of Saberseminar  
+- Josh Derenski, Statistics PhD student USC  
+- Larry Goldstein, University of Southern California  
+- Anette (Peko) Hosoi, Massachusets Institute of Technology  
+- Gary Lorden, Caltech  
+- Alan Nathan(chair), University of Illinois - Urbana-Champaign  
+- Lloyd Smith, Washington State University  
+
+
+# Their Conjectures about Home Runs
+
+  - Concentration of home runs among a certain group of players
+  
+  - Concentration of home runs among certain balls park
+  
+  - Changes in Pitching Strategy
+  
+  - Changes in Batting Strategy 
+  
+  - Characteristics of Home Runs
+
+
+# Launch angles and Exit Velocities
+  
+- The probability of hitting a ball into the "red zone" did not change.
+- Red Zone: Velocities between (90 and 115)mph and Launch angles bwtween (15 and 45 degrees)
+  
+![](Commisoner_2016.png)
+
+
+# Launch angles and Exit Velocities cont..
+
+- BUT the probability of hitting a ball into the "red zone" AND making a home run DID change.
+- This means that the drag coefficients of the ball changed
+![](Commisioner_2017.png)
+
+
+# Temperature or The Ball 
+
+- Analysis on temperature concluded that home run surge could be explained by temperature. 
+
+- The commited went to Rawlings in Costa Rica to analyze the manufacturing of the ball 
+
+- Tests performed to measure properties of the baseball provided no proof of significant changes
+
+
+# Official Committee Conclusions
+
+## The ball bahaved differetly in the air, but the physical properties of the ball remained inside parameters set by the MLB
+
+
+# Recommended changes:
+
+  - Establish methods to measure properties of the ball that affect carry
+  
+  - Monitor the climate the balls are stored in
+  
+  - Re-evaluate specifications of the ball from Rawlings
+  
+  - Improve completeness of StatCast data
+
+
+# Fivethirtyeight.com
+
+Who?
+
+- A data journalism blog created by Nate Silver who is an american statistician.
+- Long history of predictive analytics successes in sports and politics.
+
+# Fivethirtyeight.com cont..
+
+What did they do?
+
+- Used a Computed Tomography (CT) scan to X-ray baseballs 
+- USed a Gravimetric testing for a Chemical Composition of the ball
+
+# Fivethirtyeight.com cont..
+
+What did they find?
+
+- The chemicall composistion of the core of the baseball chaged
+- The entire baseball was now 0.5g lighter
+
+What they concluded?
+
+- These changes to the ball could only account for 25% of the surge
+- The surge was a 46% increase home runs
+
+# Our Story
+
+## We believe the most unexplored area of the surge is the players themselves.
+
+# Difficulty in Collecting Data
+
+  - Initial difficulty, MLB website not scrape-friendly
+  - Some data unavailable Baseballr
+
+# Data Collection
+
+- Baseball Savant: Statcast measurements (pitch speed, exit velocity, etc.)
+- Lahman: general player info (age, height, weight)
+
+
+# Data Organization
+Statcast Video
+
+[StatCast Data](https://www.mlb.com/news/statcast-primer-baseball-will-never-be-the-same/c-119234412 )
+
+Harper HR
+
+[Bryce Harper](https://baseballsavant.mlb.com/videos?video_id=126094883
+Cleaning)
+
+# Players
+
+Our investigation focused on how the players themselves were affecting the increase in home runs. We decided to look at the following variables for this:
+
+- Age
+- Height and weight 
+- New MLB player (Rookies)
+
+# Age
+
+Is age a factor in the surge? Does the age of the individual players affect home run production?
+
+![](homerun_ages.png)
+
+
+# Height and Weight
+
+We used height and weight of all players as a proxy for the strength. Are players getting stronger? I.e are they taller and/or weight more?
+
+![](wh_with_pitchers.png)
+
+# Heights and Weights cont..
+![](wh_with_pitchers_1.png)
+
+
+# Height and Weight cont..
+
+We decided to eliminate pitchers from this database. Are the batters getting stronger?
+
+![](h_wihout_pitchers.png)
+
+# Heigths and Weights cont..
+
+![](w_wihout_pitchers.png)
+
+# New MLB Player (Rookies)
+Is the incoming class of MLB hitters also affected by the surge in home runs?
+
+![](rookies_wh_with_pitchers_1.png)
+
+
+# New MLB Player (Rookies) cont..
+
+Are the Rookies stronger?
+
+(Graph of weight and weight of rookies )
+![](rookies_wh_no_pitches.png)
+
+# Pitchers 
+
+Are pitchers throwing differntly?
+
+![](total_pitchs_and_strikeouts.png)
+# Pitchers cont..
+
+Where are the stike outs and Home run happenning?
+
+![](Stirkeouts.png)
+
+
+# Regression 
+Variables: 
+
+- release speed	
+- weight
+- height		
+- stand
+- age
+- throw
+- Interaction of height and weight		
+- Multiple regressions ran: Pre/post 2015, post 2015 with launch speed added
+
+# Significance 
+![](pre2015reg.png)
+
+#Significance cont..
+![](post2015reg.png)
+
+#Significance cont..
+![](post2015Exitvelo.png)
+
+
+#Significance cont..
+
+- Pre-2015 shows high significance of all variables, throwing arm less so
+- Post-2015 shows high significance of all variables, except age
+- Post-2015 with added speed no longer holds weight or height as significant
+
+# Conclusion
+
+- We looked at variables that describe the players and how they have changed. We found that the home run surge cannot be explained by the players changing.
+
+# Future
+
+- Access to more completeness of Data
+- If we had more time, we could inspect the ball more
+
+
+# References
+
+[^1]: @Albert2018
+[^2]: @Getz2009
